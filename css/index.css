@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Cloister Black';
+    src: url(../assets/fonts/CloisterBlack.ttf)
+}
+
+@font-face {
+    font-family: 'Hit Me Punk';
+    src: url(../assets/fonts/HitMePunk.ttf)
+}
+
+@font-face {
+    font-family: 'Penguinzada';
+    src: url(../assets/fonts/Penguin-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Water Park';
+    src: url(../assets/fonts/Water\ Park.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    transition: .5s  ;
+}
+
+/* home page */
+/* section 1 */
+#body-index {
+    background-image: url(../assets/images/wallpaper01.jpg);
+}
+
+.home-section-1,
+.meetasap-section-1 {
+    width: 420px;
+}
+
+.home-title-field {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: min-content;
+    height: 100vh;
+    padding: 0 30px;
+    z-index: 99;
+}
+
+.home-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Cloister Black';
+    font-size: 120px;
+    margin: 0;
+    width: min-content;
+    height: min-content;
+    z-index: 2;
+}
+
+.home-title span {
+    font-size: 50px;
+}
+
+.home-title-field-2 {
+    color: #ccc;
+    margin: 8px 0 0 8px;
+    z-index: 2;
+}
+
+
+
+.home-menu-field {
+    display: flex;
+    flex-direction: column-reverse;
+    width: min-content;
+    height: 100vh;
+}
+
+.menuInvisivel {
+    position: absolute;
+    opacity: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.home-menu-circle {
+    width: 600px;
+    height: 600px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-40%, 20%);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.home-menu-circle.hovered,
+.home-menu-circle.active {
+    width: 700px;
+    height: 700px;
+    cursor: pointer;
+}
+
+.home-title-span {
+    visibility: hidden;
+}
+
+.home-title-span.hovered {
+    visibility: visible;
+}
+
+
+
+/* section 2 */
+.meetasap-menu-field {
+    margin-top: 100px;
+}
+
+.meetasap-menu-circle {
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-1000%, 200%);
+    transition: .6s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 250%;
+    font-family: 'Hit Me Punk';
+    font-size: 25px;
+}
+
+.meetasap-menu-circle.active {
+    transform: translate(0, 0);
+}
+
+
+
+/* section 3 */
+.contact-menu-circle {
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 50%;
+    transform: translate(-1000%, -900%);
+    transition: 1.2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Water Park';
+    color: #000;
+}
+
+.contact-menu-circle.active,
+.contact-menu-circle.meetasap {
+    transform: translate(-10%, 0) rotate(1460deg);
+    
+}
+
+.picture-1-menu-field {
+    height: 290px;
+}
+
+.picture-1-circle {
+    width: 400px;
+    height: 400px;
+    background-image: url(../assets/images/wallpaper05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    border-radius: 50%;
+    transform: translate(-1000%, 500%);
+    transition: 1s;
+}
+
+.picture-1-circle.active {
+    transform: translate(0, -30%);
+}
+
+
+
+/* section 4 */
+.picture-2-menu-field {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90%;
+}
+
+.picture-2-circle {
+    width: 300px;
+    height: 300px;
+    background-image: url(../assets/images/asap-worldwide.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    border-radius: 50%;
+    transform: translate(-1000%, 100%);
+    transition: 1.4s;
+}
+
+.picture-2-circle.active {
+    transform: translate(-25%, 0);
+}
